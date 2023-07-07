@@ -1,5 +1,6 @@
 using DinkToPdf.Contracts;
 using DinkToPdf;
+using DinkToPdfAllOs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
-DinkToPdfAll.LibraryLoader.Load();
+LibraryLoader.Load();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
