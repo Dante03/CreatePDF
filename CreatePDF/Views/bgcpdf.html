@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TITLE]</title>
+</head>
+<body style="width:100%;margin-left:auto;margin-right:auto;">
+    <div style="color: white;background-color: white; width:100%;height: 10px;margin-bottom: 10px;"></div>
+    <div>
+        <div>
+            <img style="margin-top: -10px;position: relative; float: left;background-position: 50% 50%;background-repeat:no-repeat;background-size: contain;background-color: white; color: white; " width="250px" height="50px" src="[KLIBU]">
+        </div>
+        <div style="position: relative;float: right;color: darkblue;background-color: darkblue; width:60%; border-radius: 0px 50px 0px 0px;height: 40px;"></div>
+    </div>
+    
+    
+    <table  cellpadding="3" style="font-size: 18px;font-family: arial, sans-serif;border-collapse: collapse;width: 100%;border-radius: 0px 50px 0px 0px;overflow: hidden;border-spacing: 0 0;">
+        <caption>
+            <td style="text-align: center;padding: 50px;font-size:24px" colspan="3"><b>LISTAS NEGRAS</b></td>
+        </caption>
+        <tr style="text-align: center;background-color: gainsboro;" colspan="3">
+            <td style="width: 260px;"><b>Reporte generado por usuario</b></td>
+            <td style="width: 250px;"><b>Fecha de extracción</b></td>
+            <td style="width: 250px;"><b>Tipo de verificación</b></td>
+        </tr>
+        <tr style="text-align: center;width: 100px;">
+            <td>[USUARIO]</td>
+            <td>[FECHAEXTRACCION]</td>
+            [ISVALID]
+        </tr>
+    </table>
+    <table cellpadding="3" style="margin-top: 60px;font-size: 20px;font-family: arial, sans-serif;border-collapse: collapse;width: 100%;overflow: hidden;border-spacing: 0 0;">
+        <caption>
+            <td style="background-color:darkblue;color: white; padding: 15px; font-size: 24px;" colspan="3"><b>DETALLES DEL DOCUMENTO EXTRAÍDO</b></td>
+        </caption>
+        <tr hidden colspan="2" >
+            <td style="padding-left: 20px;"><b>Secciónenles:</b></td>
+            <td>BGC (Listas negras)</td>
+        </tr>
+        <tr colspan="2" style="background-color: gainsboro;">
+            <td style="padding-left: 20px;"><b>Fecha de consulta:</b></td>
+            <td>[FECHACONSULTA]</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table style="color:rgb(167, 149, 149);font-size: 20px;width: 101%;font-family: sans-serif;border-collapse: collapse;overflow: hidden; margin-top: 50px;">
+                        <caption>
+                            <td style="background-color:darkblue;color: white; padding: 15px; font-size: 22px;" colspan="4"><b>DETALLES DE LA VERIFICACIÓN - PERSONA FÍSICA</b></td>
+                        </caption>
+                        <tr style="text-align: center;">
+                            <td>Coincidencia (%)</td>
+                            <td>Razón Social</td>
+                            <td>RFC</td>
+                            <td>Tipo (PFAEM/PM)</td>
+                        </tr>
+                        [TEMPLATE]
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table style="color:rgb(167, 149, 149);font-size: 18px;width: 101%;font-family: sans-serif;border-collapse: collapse;overflow: hidden; margin-top: 50px;">
+                    <tr>
+                        <td style="background-color:darkblue;color: white; padding: 15px; font-size: 22px;" colspan="4"><b>NOMENCLATURA DE LISTAS</b></td>
+                    </tr>
+                    <tr><td style="color:black"><b>Nacionales</b></td></tr>
+                    <tr colspan="4" style="background-color: gainsboro;">
+                        <td><b>PPE</b></td>
+                        <td colspan="4">Persona Políticamente Expuesta con Familiares y Consanguíneos</td>
+                    </tr>
+                    <tr>
+                        <td><b>FUNC</b></td>
+                        <td colspan="4">Funcionarios que trabajan en el Gobierno</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>FAMI</b></td>
+                        <td colspan="4">Familiares de los Funcionarios(FUNC)</td>
+                    </tr>
+                    <tr>
+                        <td><b>VENC</b></td>
+                        <td>Vencidos(ExPEP's)</td>
+                    </tr>
+                    <tr colspan="24" style="background-color: gainsboro;"><td colspan="4" style="color: black;"><b>Internacionales</b></td></tr>
+                    <tr>
+                        <td><b>GB</b></td>
+                        <td>Guinea Bissau</td>
+                        <td><b>DEA</b></td>
+                        <td>Drug Enforcement Administration</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>HMT</b></td>
+                        <td>Her Majesty’s Treasury</td>
+                        <td><b>DFAT</b></td>
+                        <td>Department of Foreign Affair and Trade</td>
+                    </tr>
+                    <tr>
+                        <td><b>ICE</b></td>
+                        <td>U.S. Inmigration and Customs</td>
+                        <td><b>DPRK</b></td>
+                        <td>Democratic People’s Republic of Korea</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b></b></td>
+                        <td>Enforcement</td>
+                        <td><b>DRC</b></td>
+                        <td>Democratic Republic of the Congo</td>
+                    </tr>
+                    <tr>
+                        <td><b>INTP</b></td>
+                        <td>Interpol - Organización Internacional</td>
+                        <td><b>PEPINT</b></td>
+                        <td>PEPs Internacionales</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b></b></td>
+                        <td>de Policia Criminal</td>
+                        <td><b>PGJ</b></td>
+                        <td>Procuraduria General de Justicia</td>
+                    </tr>
+                    <tr>
+                        <td><b>IRAN</b></td>
+                        <td>Irán</td>
+                        <td><b>ATF</b></td>
+                        <td>Bureau of Alcohol, Tabacco,</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>IRAQ</b></td>
+                        <td>Iraq</td>
+                        <td><b></b></td>
+                        <td>Firearms, and Explosives</td>
+                    </tr>
+                    <tr>
+                        <td><b>BID</b></td>
+                        <td>Banco Interamericano de Desarrollo</td>
+                        <td><b>BIS</b></td>
+                        <td>Bereau of Industry and Security</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>BM</b></td>
+                        <td>Banco Mundial</td>
+                        <td><b>BOE</b></td>
+                        <td>Bank of England</td>
+                    </tr>
+                    <tr>
+                        <td><b>CAR</b></td>
+                        <td>Central African Republic</td>
+                        <td><b>CBI</b></td>
+                        <td>Central Bureau of Investigation</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>EPA</b></td>
+                        <td>Environmental Protection Agency</td>
+                        <td><b>FBI</b></td>
+                        <td>Federal Bureau of Investigation</td>
+                    </tr>
+                    <tr>
+                        <td><b>LIBY</b></td>
+                        <td>Libia</td>
+                        <td><b>FINCEN</b></td>
+                        <td>Financial Crimes Enforcement Network</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>LMW</b></td>
+                        <td>London Most Wanted</td>
+                        <td><b>GAFI</b></td>
+                        <td>Grupo de Acción Financiera Internacional</td>
+                    </tr>
+                    <tr>
+                        <td><b>OCDE</b></td>
+                        <td>Organización para la Cooperación</td>
+                        <td><b>PGR</b></td>
+                        <td>Procuraduria General de la República</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b></b></td>
+                        <td>y el Desarrollo Económico</td>
+                        <td><b>PGRCOM</b></td>
+                        <td>Comunicados de la PGR</td>
+                    </tr>
+                    <tr>
+                        <td><b>OFAC</b></td>
+                        <td>Office of Foreign Assets Control</td>
+                        <td><b>PIS</b></td>
+                        <td>Postal Inspection Service</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>ONUAQ</b></td>
+                        <td>Al Qaeda</td>
+                        <td><b>REFIPRE</b></td>
+                        <td>Régimen Fiscal Preferente</td>
+                    </tr>
+                    <tr>
+                        <td><b>ONUTAL</b></td>
+                        <td>Talibán</td>
+                        <td><b>SOMA</b></td>
+                        <td>Somalia</td>
+                    </tr>
+                    <tr style="background-color: gainsboro;">
+                        <td><b>OSFI</b></td>
+                        <td>Office of the Superintendent of</td>
+                        <td><b>SOUT</b></td>
+                        <td>Sudán del Sur</td>
+                    </tr>
+                    <td><b></b></td>
+                    <td>Financial Institutions</td>
+                    <td><b>SSEU</b></td>
+                    <td>Secret Service</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

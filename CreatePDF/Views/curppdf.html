@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TITLE]</title>
+</head>
+<body style="width:100%;margin-left:auto;margin-right:auto;">
+    <div style="color: white;background-color: white; width:100%;height: 10px;margin-bottom: 10px;"></div>
+    <div>
+        <div>
+            <img style="margin-top: -10px;position: relative; float: left;background-position: 50% 50%;background-repeat:no-repeat;background-size: contain;background-color: white; color: white; " width="250px" height="50px" src="[KLIBU]">
+        </div>
+        <div style="position: relative;float: right;color: darkblue;background-color: darkblue; width:60%; border-radius: 0px 50px 0px 0px;height: 40px;"></div>
+    </div>
+    
+    
+    <table cellpadding="3" style="font-size: 18px;font-family: arial, sans-serif;border-collapse: collapse;width: 100%;border-radius: 0px 50px 0px 0px;overflow: hidden;border-spacing: 0 0;">
+        <tr>
+            <td style="text-align: center;padding: 50px;font-size:18px" colspan="3"><b>CURP</b></td>
+        </tr>
+        <tr style="text-align: center;background-color: gainsboro;" colspan="3">
+            <td style="width: 200px;"><b>Folio</b></td>
+            <td style="width: 200px;"><b>Fecha de emisión</b></td>
+            <td style="width: 200px;"><b>Tipo de verificación</b></td>
+        </tr>
+        <tr style="text-align: center;width: 100px;">
+            <td style="">[FOLIO]</td>
+            <td style="">[FECHAEMISION]</td>
+            [ISVALID]
+        </tr>
+    </table>
+    <table cellpadding="3" style="margin-top: 60px;font-size: 20px;font-family: arial, sans-serif;border-collapse: collapse;width: 100%;overflow: hidden;border-spacing: 0 0;">
+        <tr>
+            <td style="background-color:darkblue;color: white; padding: 15px; font-size: 24px;" colspan="3"><b>DETALLES DE LA VERIFICACIÓN</b></td>
+        </tr>
+        <tr colspan="2" >
+            <td style="padding-left: 20px;"><b>CURP:</b></td>
+            <td style="width: 50%;">[CURP]</td>
+        </tr>
+        <tr colspan="2" style="background-color: gainsboro;">
+            <td style="padding-left: 20px;"><b>Nombre(s):</b></td>
+            <td style="width: 50%;">[NOMBRE]</td>
+        </tr>
+        <tr colspan="2">
+            <td style="padding-left: 20px;"><b>Primer apellido:</b></td>
+            <td style="width: 50%;">[APATERNO]</td>
+        </tr>
+        <tr colspan="2" style="background-color: gainsboro;">
+            <td style="padding-left: 20px;"><b>Segundo apellido:</b></td>
+            <td style="width: 50%;">[AMATERNO]</td>
+        </tr>
+        <tr colspan="2">
+            <td style="padding-left: 20px;"><b>Sexo:</b></td>
+            <td style="width: 50%;">[SEXO]</td>
+        </tr>
+        <tr colspan="2" style="background-color: gainsboro;">
+            <td style="padding-left: 20px;"><b>Fecha de nacimiento:</b></td>
+            <td style="width: 50%;">[FECHANACIMIENTO]</td>
+        </tr>
+        <tr colspan="2">
+            <td style="padding-left: 20px;"><b>Nacionalidad:</b></td>
+            <td style="width: 50%;">[NACIONALIDAD]</td>
+        </tr>
+        <tr colspan="2" style="background-color: gainsboro;">
+            <td style="padding-left: 20px;"><b>Entidad de nacimiento:</b></td>
+            <td style="width: 50%;">[ENTIDAD]</td>
+        </tr>
+        <tr hidden colspan="2">
+            <td style="padding-left: 20px;"><b>Documento Probatorio:</b></td>
+            <td style="width: 50%;">[PROBATORIO]</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 50%;">
+                <table style="font-size: 20px;width: 100%;font-family: arial, sans-serif;border-collapse: collapse;overflow: hidden; margin-top: 50px;">
+                    <tr style="">
+                        <td style="background-color:darkblue;color: white; padding: 15px; font-size: 24px;" colspan="2"><b>DATOS DEL DOCUMENTO PROBATORIO</b></td>
+                    </tr>
+                    <tr colspan="2" >
+                        <td style="padding-left: 20px;"><b>Año registro:</b></td>
+                        <td style="width: 50%;">[ANOREGISTRO]</td>
+                    </tr>
+                    <tr colspan="2" style="background-color: gainsboro;">
+                        <td style="padding-left: 20px;"><b>Número de acta:</b></td>
+                        <td style="width: 50%;">[NUMEROACTA]</td>
+                    </tr>
+                    <tr colspan="2">
+                        <td style="padding-left: 20px;"><b>Entidad de registro:</b></td>
+                        <td style="width: 50%;">[ENTIDADREGISTRO]</td>
+                    </tr>
+                    <tr colspan="2">
+                        <td style="padding-left: 20px;"><b>Municipio de registro:</b></td>
+                        <td style="width: 50%;">[MUNICIPIOREGISTRO]</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="page-break-inside: avoid;font-size: 20px;width: 50%;font-family: arial, sans-serif;border-collapse: collapse;overflow: hidden; margin-top: 60px;">
+        <caption>
+            <td style="background-color: darkblue;color: white;font-size: 24px;padding: 15px;text-align: center;"><b>IDENTIFICACIÓN:</b></td>
+        </caption>
+        <caption>
+            <td style="background-color: gainsboro;text-align: center;">
+                <img src="[IMAGE]" style="margin: 30px;" width="370px" height="370px"></img>
+            </td>
+        </caption>
+    </table>
+    [TABLE]
+</body>
+</html>
