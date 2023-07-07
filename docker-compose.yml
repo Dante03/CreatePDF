@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  createpdf:
+    image: ${DOCKER_REGISTRY-}createpdf
+    build:
+      context: .
+      dockerfile: CreatePDF/Dockerfile
+    networks: ['internal']
+    ports:
+      - 5006:80
+
+networks:
+  internal:
+    driver: bridge
