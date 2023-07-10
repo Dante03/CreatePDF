@@ -1,6 +1,7 @@
 using DinkToPdf.Contracts;
 using DinkToPdf;
 using DinkToPdfAllOs;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v0.1", new OpenApiInfo
+    {
+        Title = "CreatePdf API",
+        Version = "v0.1"
+    });
+});
 LibraryLoader.Load();
 var app = builder.Build();
 
@@ -18,7 +27,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v0.1/swagger.json", "CreatePdf API");
+        c.RoutePrefix = string.Empty;
+        c.DisplayRequestDuration();
+    });
 }
 
 app.UseHttpsRedirection();
